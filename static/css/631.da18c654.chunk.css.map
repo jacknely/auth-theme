@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/631.da18c654.chunk.css","mappings":"AACA,UACC,SACD,CAEA,SACC,qBACD,CAEA,eACC,4BACD","sources":["KcApp/KcApp.css"],"sourcesContent":["\n.my-color {\n\tcolor: red;\n}\n\n.my-font {\n\tfont-family: 'Work Sans';\n}\n\n.login-pf body {\n\tbackground: #3f729b !important;\n}"],"names":[],"sourceRoot":""}
