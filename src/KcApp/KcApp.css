@@ -4,7 +4,7 @@
 	color: #1c1330;
 }
 
-.my-font {
+* {
 	font-family: "Outfit", sans-serif;
 }
 
@@ -12,9 +12,13 @@
 	background: #e5f6f5 !important;
 }
 
+.login-pf {
+	background: #e5f6f5 !important;
+}
+
 .login-pf-page .card-pf {
     margin-bottom: 10px;
-	border-radius: 10%;
+	border-radius: 30px;
 	padding: 50px;
 }
 

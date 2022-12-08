@@ -1,7 +1,7 @@
 {
-    "name": "Kotini-Theme",
+    "name": "Kotini",
     "homepage": "https://kotini.co.uk",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "A theme for Kotini Auth",
     "repository": {
         "type": "git",
