@@ -1,12 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;500;700&display=swap');
 
 .my-color {
-	color: red;
+	color: #1c1330;
 }
 
 .my-font {
-	font-family: 'Work Sans';
+	font-family: "Outfit", sans-serif;
 }
 
 .login-pf body {
-	background: #3f729b !important;
+	background: #e5f6f5 !important;
+}
+
+.login-pf-page .card-pf {
+    margin-bottom: 10px;
+	border-radius: 10%;
+	padding: 50px;
+}
+
+.btn-primary {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius:30px;
+	background: #66cac2;
+	border: 0;
+}
+.btn-primary:hover {
+	background: #00a69a;
+	border: 0;
 }
