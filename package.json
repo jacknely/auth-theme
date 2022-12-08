@@ -1,11 +1,11 @@
 {
-    "name": "keycloakify-starter",
-    "homepage": "https://demo-app.keycloakify.dev",
-    "version": "1.0.7",
-    "description": "A starter/demo project for keycloakify",
+    "name": "Kotini-Theme",
+    "homepage": "https://kotini.co.uk",
+    "version": "2.0.0",
+    "description": "A theme for Kotini Auth",
     "repository": {
         "type": "git",
-        "url": "git://github.com/garronej/keycloakify-starter.git"
+        "url": "git://github.com/kotini-tech/auth-theme.git"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -13,7 +13,7 @@
         "keycloak": "yarn build && keycloakify",
         "download-builtin-keycloak-theme": "download-builtin-keycloak-theme 15.0.2"
     },
-    "author": "u/garronej",
+    "author": "jacknely",
     "license": "MIT",
     "keywords": [],
     "dependencies": {
