@@ -35,10 +35,6 @@ export default function KcApp(props: Props) {
 
   const i18n = useI18n({
     kcContext,
-    // NOTE: Here you can override the default i18n messages
-    // or define new ones that, for example, you would have
-    // defined in the Keycloak admin UI for UserProfile
-    // https://user-images.githubusercontent.com/6702424/182050652-522b6fe6-8ee5-49df-aca3-dba2d33f24a5.png
     extraMessages: {
       en: {
         foo: "foo in English",
