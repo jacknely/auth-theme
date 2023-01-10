@@ -3,43 +3,61 @@ import { lazy, Suspense } from "react";
 import type { KcContext } from "./kcContext";
 import KcAppBase, { defaultKcProps } from "keycloakify";
 import { useI18n } from "./i18n";
-
+import { useDownloadTerms } from "keycloakify";
 const Register = lazy(() => import("./Register"));
-const Terms = lazy(() => import("./Terms"));
 const MyExtraPage1 = lazy(() => import("./MyExtraPage1"));
 const MyExtraPage2 = lazy(() => import("./MyExtraPage2"));
 
 export type Props = {
-    kcContext: KcContext;
+  kcContext: KcContext;
 };
 
 export default function KcApp({ kcContext }: Props) {
-    const i18n = useI18n({ kcContext });
+  useDownloadTerms({
+    kcContext,
+    downloadTermMarkdown: async ({ currentLanguageTag }) => {
+      const markdownString = await fetch(
+        (() => {
+          switch (currentLanguageTag) {
+            case "fr":
+              return tos_fr_url;
+            default:
+              return tos_en_url;
+          }
+        })()
+      ).then((response) => response.text());
 
-    //NOTE: Locales not yet downloaded
-    if (i18n === null) {
-        return null;
-    }
+      return markdownString;
+    },
+  });
+  const i18n = useI18n({ kcContext });
 
-    const props = {
-        i18n,
-        ...defaultKcProps,
-        // NOTE: The classes are defined in ./KcApp.css
-        "kcHeaderWrapperClass": "my-color my-font",
-    };
+  //NOTE: Locales not yet downloaded
+  if (i18n === null) {
+    return null;
+  }
 
-    return (
-        <Suspense>
-            {(() => {
-                switch (kcContext.pageId) {
-                    case "register.ftl": return <Register {...{ kcContext, ...props }} />;
-                    case "terms.ftl": return <Terms {...{ kcContext, ...props }} />;
-                    case "my-extra-page-1.ftl": return <MyExtraPage1 {...{ kcContext, ...props }} />;
-                    case "my-extra-page-2.ftl": return <MyExtraPage2 {...{ kcContext, ...props }} />;
-                    default: return <KcAppBase {...{ kcContext, ...props }} />;
-                }
-            })()}
-        </Suspense>
-    );
+  const props = {
+    i18n,
+    ...defaultKcProps,
+    // NOTE: The classes are defined in ./KcApp.css
+    kcHeaderWrapperClass: "my-color my-font",
+  };
 
+  return (
+    <Suspense>
+      {(() => {
+        switch (kcContext.pageId) {
+          case "register.ftl":
+            return <Register {...{ kcContext, ...props }} />;
+          case "my-extra-page-1.ftl":
+            return <MyExtraPage1 {...{ kcContext, ...props }} />;
+          case "my-extra-page-2.ftl":
+            return <MyExtraPage2 {...{ kcContext, ...props }} />;
+          default:
+            return <KcAppBase {...{ kcContext, ...props }} />;
+        }
+      })()}
+    </Suspense>
+  );
 }
