@@ -1,180 +1,180 @@
-# Terms of Service
+# Conditions générales d'utilisation
 
-## Presentation / Features
+## Présentation / Fonctionnalités
 
-[EC: continuation of today's meeting: this would deserve to differentiate the SSP Cloud from the Onyxia SSP Cloud instance]
+[EC: suite de la réunion d'aujourdhui : cela mériterait de différencier le SSP Cloud de l'instance d'Onyxia SSP Cloud]
 
-The SSP Cloud is a service (hereinafter referred to as "the service") implemented by the National Institute for Statistics and Economic Studies (hereinafter referred to as "Insee").
+Le SSP Cloud est un service (ci après désigné par "le service") mis en œuvre par l'Institut national de la statistique et des études économiques (ci-après dénommé "l'Insee").
 
-The SSP Cloud is an implementation of free software [Onyxia] (https://github.com/InseeFrLab/onyxia) created and maintained by the innovation and technical instruction division of INSEE (information system management / innovation unit and information system strategy). The SSP Cloud is hosted by INSEE.
+Le SSP Cloud est une implémentation du logiciel libre [Onyxia](https://github.com/InseeFrLab/onyxia) créé et maintenu par la division innovation et instruction technique de l'Insee (direction du système d'information/unité innovation et stratégie du système d'information). L’hébergement du SSP Cloud est assuré par l'Insee.
 
-[EC: I will remove the "on open data", since the SSP Cloud can accommodate secure data under the appropriate conditions]
-The SSP Cloud is a platform offering a "datalab" intended for _data science_ experiments on open data in which users can orchestrate services dedicated to the practice of _data science_ (development environments, databases, etc.). This service offering thus aims to familiarize users with new collaborative working methods using _open source_ statistical languages ​​(R, python, Julia, etc.), _cloud computing_ type technologies, as well as to allow processing experiments. innovative statistics. The services offered are standard.
+[EC: j'enlèverai le "sur données ouvertes", puisque le SSP Cloud peut accueillir dans les donditions idoines des données sécurisées]
+Le SSP Cloud est une plateforme proposant un "datalab" destiné aux expérimentations de _data science_ sur données ouvertes dans lequel les utilisateurs peuvent orchestrer des services dédiés à la pratique de la _data science_ (environnements de développement, bases de données...). Cette offre de services vise ainsi à familiariser les utilisateurs avec de nouvelles méthodes de travail collaboratif mobilisant des langages statistiques _open source_ (R, python, Julia...), des technologies de type _cloud computing_ ainsi qu'à permettre d'expérimenter des traitements statistiques innovants. Les services proposés sont standards.
 
-The SSP Cloud is aimed at officials of the official statistical system as well as teachers and students of the Group of National Schools of Economics and Statistics, allowing inter-service collaboration and cooperation with their ecosystem. Access can thus be granted on request and after decision of the governance bodies of the Cloud SSP to external collaborators and involved in the realization of experimental projects of the official statistical system. Projects involving non-open data are also subject to the decision of the governing bodies.
+Le SSP Cloud s’adresse aux agents du système statistique public ainsi qu'aux enseignants et étudiants du Groupe des écoles nationales d'économie et de statistique, permettant une collaboration interservices et la coopération avec leur écosystème. Des accès peuvent ainsi être accordés sur demande et après décision des organes de gouvernance du SSP Cloud à des collaborateurs extérieurs et impliqués dans la réalisation de projets expérimentaux du système statistique public. Les projets mobilisant des données non ouvertes sont aussi soumis à la décision des organes de gouvernance.
 
-The SSP Cloud allows:
+Le SSP Cloud permet :
 
--   the orchestration of _data science_ trainings
--   access to _data science_ services
--   secure data storage
--   management of secrets, such as encryption keys
--   access to a code management service
--   orchestration of data processing flows
+- l'orchestration de formations de _data science_
+- l'accès à des services de _data science_
+- le stockage sécurisé de données
+- la gestion de secrets, tels que des clés de chiffrement
+- l'accès à un service de gestion de code
+- l'orchestration de flux de traitement de données
 
-A user account is also used to connect to the service platform of the Inter-ministerial Mutualization Free Software community (<https://groupes.mim-libre.fr/>).
+Un compte utilisateur permet également de se connecter à la plateforme de services de la communauté Mutualisation Inter-ministérielle Logiciels Libres (<https://groupes.mim-libre.fr/>).
 
-## Legal Notice
+## Mentions légales
 
-Functional administration of the Cloud SSP: Insee
+Administration fonctionnelle du SSP Cloud : Insee
 
-This site is published by the National Institute for Statistics and Economic Studies (Insee).
-INSEE
+Ce site est édité par l'Institut national de la statistique et des études économiques (Insee).
+Insee
 88 avenue Verdier
 CS 70058
 92541 Montrouge cedex
 
-Director of publication: Mr. Jean-Luc Tavernier
+Directeur de la publication : Monsieur Jean-Luc Tavernier
 
-Administrator: Frédéric Comte
+Administrateur : Frédéric Comte
 
-Maintenance of the _open source_ Onyxia project: Insee
+Maintenance du projet _open source_ Onyxia : Insee
 
-Hosting: Insee - Innovation and technical instruction division
+Hébergement : Insee - Division innovation et instruction technique
 
-## Terms of use of the Service
+## Modalités d’utilisation du Service
 
-The SSP Cloud datalab can be accessed from any browser connected to
-Internet. The use of a computer is recommended. Use of the datalab services is free.
+Le datalab SSP Cloud est accessible depuis n’importe quel navigateur connecté à
+Internet. L'utilisation d'un ordinateur est recommandée. L’utilisation des services du datalab est gratuite.
 
-The user community is accessible on:
+La communauté d'utilisateurs est accessible sur :
 
--   Tchap, salon [SSP Cloud] (https://www.tchap.gouv.fr/#/room/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr)
--   Rocket Chat at MIM Libre, [SSP Cloud] lounge (https://chat.mim-libre.fr/channel/sspcloud)
+- Tchap, salon [SSP Cloud](https://www.tchap.gouv.fr/#/room/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr)
+- Rocket Chat du MIM Libre, salon [SSP Cloud](https://chat.mim-libre.fr/channel/sspcloud)
 
-## Limits of use of the Service
+## Limites d’utilisation du Service
 
-Public data and data can be processed on the datalab
-usual (working data without particular sensitivity). In the absence of specific authorization for a given experimental project, cannot be
-"protected" or "sensitive" data processed on the datalab, with or without a
-confidentiality intended to restrict distribution to a specific domain
-(statistical, commercial, industrial secrecy, etc.).
+Peuvent être traitées sur le datalab les données publiques et données
+usuelles (données de travail sans sensibilité particulière). En l'absence d'autorisation spécifique pour un projet d'expérimentation donné, ne peuvent être
+traitées sur le datalab les données ‘protégées’ ou ‘sensibles’, avec ou sans marque de
+confidentialité destinée à restreindre la diffusion à un domaine spécifique
+(secret statistique, commercial, industriel..).
 
-[EC: seems too "weak" to me, refer to the opinion of the UAJC on this point: if an agent puts sensitive data on the datalab, under his responsibility, what is the responsibility of his employer? from INSEE? can be added "after he has taken a legal opinion on the character 'protected' or 'sensitive' and that he informed his hierarchy ??]
-The "protected" or "sensitive" nature of the information stored or processed on the datalab
-is subject to the discretion of the user under his own
-responsibility.
+[EC: me semble trop "faible", se référer à l'avis de l'UAJC sur ce point : si un agent met des données sensibles sur le datalab, sous sa responsabilité, quelle est la responsabilité de son employeur? de l'Insee ? peut être ajouter "après qu'il ait pris un avis juridique sur le caractère 'protégé' ou 'sensible' et qu'il en ait informé sa hiérarchie??]
+Le caractère ‘protégé’ ou ‘sensible’ des informations stockées ou traitées sur le datalab
+est soumis à l’appréciation de l’utilisateur sous sa propre
+responsabilité.
 
-## Roles, commitments and associated responsibilities
+## Les rôles, engagements et responsabilités associées
 
-The service is made available by INSEE without other express guarantees or
-tacit than those provided herein. The service is based on benchmark open source technologies. However, it is not guaranteed that it
-is free from anomalies or errors. The service is therefore made available ** without
-guaranteed availability and performance **. As such, INSEE cannot
-be held responsible for loss and / or damage of any kind
-be, who couldbe caused as a result of a malfunction or
-unavailability of the service. Such situations will not give right to any
-financial compensation.
+Le service est mis à disposition par l'Insee sans autres garanties expresses ou
+tacites que celles qui sont prévues par les présentes. Le service s’appuie sur des technologies open source de référence. Toutefois, il n’est pas garanti qu’il
+soit exempt d’anomalies ou erreurs. Le service est donc mis à disposition **sans
+garantie sur sa disponibilité et ses performances**. A ce titre, l'Insee ne peut
+être tenue responsable des pertes et/ou préjudices, de quelque nature qu’ils
+soient, qui pourraient être causés à la suite d’un dysfonctionnement ou une
+indisponibilité du service. De telles situations n'ouvriront droit à aucune
+compensation financière.
 
-Each user has a personal storage space. By default, all the information deposited in a user's storage space is accessible only to him. Each user has the possibility of making public files stored in their personal storage space. Each user is responsible for making their files available to the public.
+Chaque utilisateur dispose d'un espace de stockage personnel. Par défaut, toutes les informations déposées dans un espace de stockage d'un utilisateur ne sont accessibles qu'à lui seul. Chaque utilisateur a la possibilité de rendre publics des fichiers stockés dans son espace de stockage personnel. Chaque utilisateur est responsable de la mise à disposition publique de ses fichiers.
 
-[EC: take the opinion of the UAJC, I do not know if it is the user specifically who is responsible for the processing or the institution on which he depends]
-Each user is responsible for processing all the experimental work he performs on the SSP Cloud.
-He must, if necessary, declare the personal processing carried out using the SSP Cloud to the data protection officer of his structure and inform the members thereof. [not sure that it is only the DPD of his structure who must be aware, also the DPD Insee?]
-[EC: in the case of a project involving several institutions, users must have previously established a data sharing / provision agreement.]
+[EC : prendre l'avis de l'UAJC, je ne sais pas si c'est l'utilisateur nommément qui est responsable du traitement ou bien l'institution dont il dépend]
+Chaque utilisateur est responsable de traitement pour l’ensemble des travaux d'expérimentation qu'il réalise sur le SSP Cloud.
+Il doit, le cas échant, déclarer les traitements à caractère personnel réalisés à l'aide du SSP Cloud au délégué à la protection des données de sa structure et en informer les membres. [pas sur que ce soit uniquement le DPD de sa structure qui doit être au courant, aussi le DPD Insee?]
+[EC : dans le cas d'un projet faisant intervenir plusieurs institutions, les utilisateurs doivent avoir au préalable établi un conventionnement de partage/ mise à disposition des données.]
 
-## Creating an account on the SSP Cloud
+## La création de compte sur le SSP Cloud
 
-Access to the SSP Cloud requires prior registration and authentication.
+L'accès au SSP Cloud nécessite une inscription préalable et une authentification.
 
-## Experimental projects on sensitive data
+## Les projets d'expérimentation sur données sensibles
 
-** TODO **
+**TODO**
 
-Role of the project security manager
+Rôle du responsable de sécurité du projet
 
-Enrollment of sensitive projects
+Enrôlement des projets sensibles
 
-Creation of collaborative spaces for sensitive projects
+Création d'espaces collaboratifs pour les projets sensibles
 
-Creation and life cycle of spaces
+Création et cycle de vie des espaces
 
-## Processing of personal data
+## Traitement des données à caractère personnel
 
-Data processing is based on the performance of the mission of providing a platform dedicated to experimentation and learning about data science for the benefit of the official statistical system.
+Le traitement des données se fonde sur l’exécution de la mission que constitue la mise à disposition d'une plateforme dédiée à l'expérimentation et à l'apprentissage de la datascience au bénéfice du système statistique public.
 
-The Service only collects the data strictly necessary for its implementation.
-artwork.
+Le Service ne collecte que les données strictement nécessaires à sa mise en
+œuvre.
 
-The processing of personal data within the meaning of Articles 9 and 10 of
-general data protection regulation (racial or ethnic origin,
-political opinions, religious or philosophical beliefs, belonging
-union, criminal convictions ...) is banned on the SSP Cloud.
+Le traitement de données à caractère personnel au sens des articles 9 et 10 du
+règlement général sur la protection des données (origine raciale ou ethnique,
+opinions politiques, convictions religieuses ou philosophiques, appartenance
+syndicale, condamnations pénales...) est proscrit sur le SSP Cloud.
 
-[EC: same remark as above -> have the opinion of the Legal Unit]
-Personal data processed as part of an experiment carried out by a user, when there is any, is the responsibility of the entity
-administrative office from which the user originated. The
-arrangements for their treatment must be communicated by
-the user to the data protection officer of his entity
-administrative unit.
+[EC: meme remarque que ci-dessus --> avoir l'avis de l'Unité juridique]
+Les données à caractère personnel traitées dans le cadre d'une expérimentation réalisée par un utilisateur, quand il y en a, relèvent de la responsabilité de l’entité
+administrative dont est issu l’utilisateur. Les
+dispositions relatives à leur traitement doivent être communiquées par
+l'utilisateur au délégué à la protection des données de son entité
+administrative de rattachement.
 
-Regarding the scope of the SSP Cloud service, the purpose of processing
-concerns the management of the platform's accounts
-(creation / conservation / deletion), operation of the platform (monitoring,
-usage statistics) as well as the management of the services offered by the platform. Below is the list of
-transverse personal data whose processing is under the
-responsibility of INSEE.
+Pour ce qui est du périmètre du service SSP Cloud, la finalité de traitement
+concerne la gestion des comptes de la plateforme
+(création/conservation/suppression), l’exploitation de la plateforme (suivi,
+statistiques d’usages) ainsi que la gestion des services offerts par la plateforme. Ci-dessous la liste des
+données à caractère personnel transverses dont le traitement est sous la
+responsabilité de l'Insee.
 
-** Suite to be managed with the DC POD **
+**Suite à gérer avec le DC POD**
 
-> RL: @Fred, I put it a bit at random, I let you complete / amend
+> RL : @Fred, je mets un peu au hasard, je te laisse compléter/amender
 
-### Profile data
+### Données relatives au profil
 
-their first name, last name and email address (required);
+ses prénom, nom et adresse mail (obligatoire) ;
 
-freely:
+de façon libre :
 
--   photo (see gitlab)
--   ...
+- photo (cf. gitlab)
+- ...
 
-### Trace data
+### Données de trace
 
-They are collected each time a user connects and, for example,
-the use of a technical identifier, to trace connection operations and
-modification of the objects of the service database.
+Elles sont collectées à chaque connexion d'un utilisateur et permettent, par
+l’utilisation d’un identifiant technique, de tracer les opérations de connexion et
+de modification des objets de la base de données du service.
 
-They are used for technical support purposes. They can also do
-subject to periodic review by the directors for control purposes and usage statistics.
+Elles servent à des fins de support technique. Elles peuvent également faire
+l'objet d'une revue périodique de la part des administrateurs à des fins de contrôle et de statistiques d'usage.
 
-### Cookie data
+### Les données de cookies
 
-These cookies are only intended to allow the service to function and
-to facilitate its use by users according to the constraints of each typology.
+Ces cookies n’ont pour objet que de permettre le fonctionnement du service et
+de faciliter son usage par les utilisateurs selon les contraintes chaque typologie.
 
--   Session cookie: mandatory, it identifies the session of
-    the user. The cookie is destroyed at the end of the session.
+- Cookie de session : obligatoire , il permet d'identifier la session de
+  l'utilisateur. Le cookie est détruit à la fin de la session.
 
--   Reauthentication cookie: optional, it allows you to re-authenticate
-    the user logged in for the duration of the cookie (one year maximum)
+- Cookie de réauthentification : optionnel, il permet de ré-authentifier
+  l'utilisateur connecté pendant la durée du cookie (un an maximum)
 
-## Modification and evolution of the Service
+## Modification et évolution du Service
 
-INSEE reserves the right to develop, modify or suspend,
-without notice, the Service for maintenance reasons or for any other
-reason deemed necessary. The information is then communicated to users via Tchap.
-The terms of these conditions of use may be modified or
-completed at any time, without notice, depending on changes
-made to the Service, changes in legislation or for any other reason
-deemed necessary. These modifications and updates are binding on the user who
-should therefore refer regularly to this section to verifythe
-general conditions in force (accessible from the home page).
+L'Insee se réserve la liberté de faire évoluer, de modifier ou de suspendre,
+sans préavis, le Service pour des raisons de maintenance ou pour tout autre
+motif jugé nécessaire. L'information est alors communiquée aux utilisateurs via Tchap.
+Les termes des présentes conditions d’utilisation peuvent être modifiés ou
+complétés à tout moment, sans préavis, en fonction des modifications
+apportées au Service, de l’évolution de la législation ou pour tout autre motif
+jugé nécessaire. Ces modifications et mises à jour s’imposent à l’utilisateur qui
+doit, en conséquence, se référer régulièrement à cette rubrique pour vérifier les
+conditions générales en vigueur (accessible depuis la page d’accueil).
 
 ## Contact
 
-For technical problems and / or
-functionalities encountered on the platform, it is recommended, first of all
-time to solicit communities of peers in collaborative spaces
-provided for this purpose on Tchap and Rocket Chat-MIM Libre.
+Pour les problèmes techniques et/ou
+fonctionnels rencontrés sur la plateforme, il est conseillé, dans un premier
+temps de solliciter les communautés de pairs dans les espaces collaboratifs
+prévus à cet effet sur Tchap et Rocket Chat-MIM Libre.
 
-CNIL right of access for: <innovation@insee.fr>
+Droit d’accès CNIL pour : <innovation@insee.fr>
