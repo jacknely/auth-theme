@@ -5,7 +5,7 @@
     "description": "A theme for Kotini Auth",
     "repository": {
         "type": "git",
-        "url": "git://github.com/kotini-tech/auth-theme.git"
+        "url": "git://github.com/jacknely/auth-theme.git"
     },
     "scripts": {
         "start": "react-scripts start",
