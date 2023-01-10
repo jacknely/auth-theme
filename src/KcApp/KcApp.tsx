@@ -1,12 +1,10 @@
 import "./KcApp.css";
-import { lazy, Suspense } from "react";
 import type { KcContext } from "./kcContext";
-import KcAppBase, { defaultKcProps } from "keycloakify";
-import { useI18n } from "./i18n";
-import { useDownloadTerms } from "keycloakify";
-const Register = lazy(() => import("./Register"));
-const MyExtraPage1 = lazy(() => import("./MyExtraPage1"));
-const MyExtraPage2 = lazy(() => import("./MyExtraPage2"));
+import KcAppBase, {
+  defaultKcProps,
+  useDownloadTerms,
+  useI18n,
+} from "keycloakify";
 import tos_en_url from "./tos_en.md";
 import tos_fr_url from "./tos_fr.md";
 
@@ -14,7 +12,9 @@ export type Props = {
   kcContext: KcContext;
 };
 
-export default function KcApp({ kcContext }: Props) {
+export default function KcApp(props: Props) {
+  const { kcContext } = props;
+
   useDownloadTerms({
     kcContext,
     downloadTermMarkdown: async ({ currentLanguageTag }) => {
@@ -32,34 +32,41 @@ export default function KcApp({ kcContext }: Props) {
       return markdownString;
     },
   });
-  const i18n = useI18n({ kcContext });
 
-  //NOTE: Locales not yet downloaded
+  const i18n = useI18n({
+    kcContext,
+    extraMessages: {
+      en: {
+        foo: "foo in English",
+        // Here we overwrite the default english value for the message "doForgotPassword"
+        // that is "Forgot Password?" see: https://github.com/InseeFrLab/keycloakify/blob/f0ae5ea908e0aa42391af323b6d5e2fd371af851/src/lib/i18n/generated_messages/18.0.1/login/en.ts#L17
+        doForgotPassword: "I forgot my password",
+      },
+      fr: {
+        /* spell-checker: disable */
+        foo: "foo en Francais",
+        doForgotPassword: "J'ai oublié mon mot de passe",
+        /* spell-checker: enable */
+      },
+    },
+  });
+
+  //NOTE: Locale not yet downloaded
   if (i18n === null) {
     return null;
   }
 
-  const props = {
-    i18n,
-    ...defaultKcProps,
-    // NOTE: The classes are defined in ./KcApp.css
-    kcHeaderWrapperClass: "my-color my-font",
-  };
-
   return (
-    <Suspense>
-      {(() => {
-        switch (kcContext.pageId) {
-          case "register.ftl":
-            return <Register {...{ kcContext, ...props }} />;
-          case "my-extra-page-1.ftl":
-            return <MyExtraPage1 {...{ kcContext, ...props }} />;
-          case "my-extra-page-2.ftl":
-            return <MyExtraPage2 {...{ kcContext, ...props }} />;
-          default:
-            return <KcAppBase {...{ kcContext, ...props }} />;
-        }
-      })()}
-    </Suspense>
+    <KcAppBase
+      kcContext={kcContext}
+      i18n={i18n}
+      {...{
+        ...defaultKcProps,
+        // NOTE: The classes are defined in ./KcApp.css
+        kcHeaderWrapperClass: "my-color my-font",
+      }}
+      //Uncomment the following line if you want to prevent the default .css to be downloaded
+      //doFetchDefaultThemeResources={false}
+    />
   );
 }
