@@ -1,1 +1,0 @@
-To continue, you must accept the [Terms and Conditions](https://kotini.co.uk/t&c) and [Privacy Policy](https://kotini.co.uk/privacy)..
