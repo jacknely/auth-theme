@@ -7,6 +7,8 @@ import { useDownloadTerms } from "keycloakify";
 const Register = lazy(() => import("./Register"));
 const MyExtraPage1 = lazy(() => import("./MyExtraPage1"));
 const MyExtraPage2 = lazy(() => import("./MyExtraPage2"));
+import tos_en_url from "./tos_en.md";
+import tos_fr_url from "./tos_fr.md";
 
 export type Props = {
   kcContext: KcContext;
