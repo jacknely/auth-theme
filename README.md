@@ -1,13 +1,13 @@
 <p align="center">
-    <img src="https://github.com/garronej/keycloakify-starter/workflows/ci/badge.svg?branch=main">
+    <img src="https://github.com/garronej/keycloakify-advanced-starter/workflows/ci/badge.svg?branch=main">
 </p>
 
 A starter/demo project for [Keycloakify](https://keycloakify.dev)
 
 # ⚠️ Please read the two following notices ⚠️
 
-> This starter is for **CSS-level customization**, if you want to customize the pages at
-> **the component level** heads over to [keycloakify-advanced-starter](https://github.com/garronej/keycloakify-advanced-starter).
+> This starter is for **Component-level customization**, if you only want to customize **the page at the CSS level**
+> heads over to [keycloakify-starter](https://github.com/garronej/keycloakify-starter).
 
 > If you are only looking to create a theme and don't care about integrating it into a React app there
 > are a lot of things that you can remove from this starter. [Please read this](#standalone-keycloak-theme).
@@ -19,7 +19,7 @@ yarn
 yarn keycloak # Build the theme one time (some assets will be copied to 
               # public/keycloak_static, they are needed to dev your page outside of Keycloak)
 yarn start # See the Hello World app
-# Uncomment line 5 of src/kcContext, reload https://localhost:3000
+# Uncomment line 15 of src/KcApp/kcContext, reload https://localhost:3000
 # You can now develop your Login pages.
 
 # Think your theme is ready? Run
@@ -66,11 +66,11 @@ More info on the `--external-assets` build option [here](https://docs.keycloakif
 # Docker
 
 ```bash
-docker build -f Dockerfile -t garronej/keycloakify-starter:test .
+docker build -f Dockerfile -t garronej/keycloakify-advanced-starter:test .
 #OR (to reproduce how the image is built in the ci workflow):
-yarn && yarn build && tar -cvf build.tar ./build && docker build -f Dockerfile.ci -t garronej/keycloakify-starter:test . && rm build.tar
+yarn && yarn build && tar -cvf build.tar ./build && docker build -f Dockerfile.ci -t garronej/keycloakify-advanced-starter:test . && rm build.tar
 
-docker run -it -dp 8083:80 garronej/keycloakify-starter:test
+docker run -it -dp 8083:80 garronej/keycloakify-advanced-starter:test
 ```
 
 ## DockerHub credentials
@@ -85,7 +85,7 @@ repository `Settings` tab, then `Secrets` you will need to add two new secrets:
 
 If you are only looking to create a keycloak theme, you can run theses few commands
 after clicking ![image](https://user-images.githubusercontent.com/6702424/98155461-92395e80-1ed6-11eb-93b2-98c64453043f.png) to refactor the template 
-and remove unnecessary files.
+and remove unnecessary file.
 
 ```bash
 rm -r src/App
@@ -96,7 +96,7 @@ cat << EOF > src/index.tsx
 import { createRoot } from "react-dom/client";
 import { StrictMode } from "react";
 import { kcContext } from "./kcContext";
-import KcApp from "./KcApp";
+import KcApp from "KcApp";
 
 if( kcContext === undefined ){
     throw new Error(

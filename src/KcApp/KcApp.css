@@ -7,7 +7,7 @@
 	--green-20: #CCEDEB;
 	--green-25: #BFE9E6;
 	--green-30: #B2E4E1;
-	
+
 	--black: #1C1330;
 	--red: #D83F3F;
 	--pink: #FFCACA;
@@ -98,7 +98,7 @@ a, a span{
 	font-size:1.5em;
 	font-weight:300 !important;
 }
-.control-label{	
+.control-label{
 	font-size: 1.5em;
 	margin: 0 0 10px 20px;
 }
