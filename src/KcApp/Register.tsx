@@ -18,8 +18,6 @@ const Register = memo(({ kcContext, i18n, ...props }: { kcContext: KcContext_Reg
 
     const { msg, msgStr } = i18n;
 
-	console.log(`NOTE: It is up to you do do something meaningful with ${kcContext.authorizedMailDomains}`)
-
     return (
         <Template
             {...{ kcContext, i18n, ...props }}
