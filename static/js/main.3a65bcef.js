@@ -6,7 +6,7 @@
                 
                     var p= "";
                     Object.defineProperty(t, "p", {
-                        get: function() { return "kcContext" in window ? "https://kotini.co.uk/" : p; },
+                        get: function() { return "kcContext" in window ? "https://auth.kotini.co/" : p; },
                         set: function (value){ p = value;}
                     });
                     
@@ -19,7 +19,7 @@
                 
                     var p= "";
                     Object.defineProperty(t, "p", {
-                        get: function() { return "kcContext" in window ? "https://kotini.co.uk/" : p; },
+                        get: function() { return "kcContext" in window ? "https://auth.kotini.co/" : p; },
                         set: function (value){ p = value;}
                     });
                     
